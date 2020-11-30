@@ -38,7 +38,7 @@ const blockerAnimation = keyframes`
     transform: translateX(25%);
   }
   66% {
-    transform: translateX(55%);
+    transform: translateX(65%);
   }
   100% {
     transform: translateX(100%);
