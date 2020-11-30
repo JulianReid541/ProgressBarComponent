@@ -14,12 +14,16 @@ const Background = styled.div`
 const bubbles = [];
 var count = 0;
 
+const getInt = (a, b) => {
+  return Math.floor(Math.random() * b + a);
+}
+
 for (let i = 0; i < 15; i++) {
-  const size = `${getint(20, 40)}px`;
+  const size = `${getInt(20, 40)}px`;
   bubbles.push({
-    opacity: `0.${getint(20, 50)}`,
-    bottom: `-${getint(20, 60)}px`,
-    left: `${getint(count - 10, count + 10)}px`,
+    opacity: `0.${getInt(20, 50)}`,
+    bottom: `-${getInt(20, 60)}px`,
+    left: `${getInt(count - 10, count + 10)}px`,
     width: size,
     height: size,
   });
@@ -34,10 +38,10 @@ const blockerAnimation = keyframes`
     transform: translateX(25%);
   }
   66% {
-    trasform: translateX(55%);
+    transform: translateX(55%);
   }
   100% {
-    transformL translateX(100%);
+    transform: translateX(100%);
   }
 `;
 
