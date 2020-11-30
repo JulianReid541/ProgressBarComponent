@@ -73,3 +73,28 @@ const Bubble = styled.div`
   transform: scale(0);
   animation: ${bubbleScale} 3s 2;
 `;
+
+const BubblingProgress = () => {
+  return (
+    <Background>
+      {bubbles.map((b) => (
+        <BubbleWrapper style={{
+            left: b.left,
+            bottom: b.bottom
+          }}
+        >
+          <Bubble
+            style={{
+              width: b.width,
+              height: b.height,
+              opacity: b.opacity
+            }}
+          />
+        </BubbleWrapper>
+      ))}
+      <Blocker />
+    </Background>
+  );
+};
+
+export default BubblingProgress;
