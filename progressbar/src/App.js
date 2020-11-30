@@ -9,7 +9,7 @@ const Background = styled.div`
   height: 56px; 
   border-radius: 1rem;
   background: linear-gradient(90deg, #00c4cc, #7d2ae8);
-  `;
+`;
 
 const bubbles = [];
 var count = 0;
@@ -39,7 +39,7 @@ const blockerAnimation = keyframes`
   100% {
     transformL translateX(100%);
   }
-  `;
+`;
 
 const Blocker = styled.div`
   position, absolute;
